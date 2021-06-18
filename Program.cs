@@ -66,8 +66,6 @@ namespace DIO.Series
             Console.Write("Digite o id da série: ");
             int indiceSerie = int.Parse(Console.ReadLine());
 
-            // https://docs.microsoft.com/pt-br/dotnet/api/system.enum.getvalues?view=netcore-3.1
-            // https://docs.microsoft.com/pt-br/dotnet/api/system.enum.getname?view=netcore-3.1
             foreach (int i in Enum.GetValues(typeof(Genero)))
             {
                 Console.WriteLine("{0}-{1}", i, Enum.GetName(typeof(Genero), i));
@@ -116,8 +114,6 @@ namespace DIO.Series
         {
             Console.WriteLine("Inserir nova série");
 
-            // https://docs.microsoft.com/pt-br/dotnet/api/system.enum.getvalues?view=netcore-3.1
-            // https://docs.microsoft.com/pt-br/dotnet/api/system.enum.getname?view=netcore-3.1
             foreach (int i in Enum.GetValues(typeof(Genero)))
             {
                 Console.WriteLine("{0}-{1}", i, Enum.GetName(typeof(Genero), i));
@@ -146,16 +142,16 @@ namespace DIO.Series
         private static string ObterOpcaoUsuario()
         {
             Console.WriteLine();
-            Console.WriteLine("DIO Séries a seu dispor!!!");
-            Console.WriteLine("Informe a opção desejada:");
-
-            Console.WriteLine("1- Listar séries");
-            Console.WriteLine("2- Inserir nova série");
-            Console.WriteLine("3- Atualizar série");
-            Console.WriteLine("4- Excluir série");
-            Console.WriteLine("5- Visualizar série");
-            Console.WriteLine("C- Limpar Tela");
-            Console.WriteLine("X- Sair");
+            Console.WriteLine("----> Madruga Séries vai te entreter!!! <----");
+            Console.WriteLine(" Informe a opção desejada:");
+            Console.WriteLine();
+            Console.WriteLine(" 1- Listar séries");
+            Console.WriteLine(" 2- Inserir nova série");
+            Console.WriteLine(" 3- Atualizar série");
+            Console.WriteLine(" 4- Excluir série");
+            Console.WriteLine(" 5- Visualizar série");
+            Console.WriteLine(" C- Limpar Tela");
+            Console.WriteLine(" X- Sair");
             Console.WriteLine();
 
             string opcaoUsuario = Console.ReadLine().ToUpper();
